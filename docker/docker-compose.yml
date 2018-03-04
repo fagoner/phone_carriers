@@ -1,0 +1,6 @@
+version: '3'
+services:
+  phone_carriers:
+    image: phone_carriers:current
+    ports:
+      - "4568:4567"
