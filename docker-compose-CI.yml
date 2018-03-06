@@ -1,5 +1,6 @@
 version: '2'
 services:
   pc:
-    dockerfile: Dockerfile-CI
-    build: .
+    build:
+      dockerfile: Dockerfile-CI
+      context: .
