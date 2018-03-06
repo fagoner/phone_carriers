@@ -1,3 +1,5 @@
-pc:
-  dockerfile: Dockerfile-CI
-  build: .
+version: '2'
+services:
+  pc:
+    dockerfile: Dockerfile-CI
+    build: .
