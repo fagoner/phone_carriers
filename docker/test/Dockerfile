@@ -1,6 +1,6 @@
 FROM ruby:2.4-onbuild
 
-COPY . /opt/drecinos/app/phone_carriers
+ADD . /opt/drecinos/app/phone_carriers
 
 WORKDIR /opt/drecinos/app/phone_carriers
 
