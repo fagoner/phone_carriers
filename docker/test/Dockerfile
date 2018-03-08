@@ -1,9 +1,9 @@
-FROM ruby:2.4-onbuild
+FROM ruby:2.4.1
 
-ADD . /opt/drecinos/app/phone_carriers
+WORKDIR /opt/src
 
-WORKDIR /opt/drecinos/app/phone_carriers
+ADD . /opt/src
 
-RUN bundle install -j 4 
+RUN bundle install -j 4
 
-CMD ["bundle", "exec", "rspec"]
+CMD [ "bundle", "exec", "rspec" ]
